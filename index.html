@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A 3D Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <img class="image-gradient" src="gradient.png" alt="gradient">
+    <div class="layer-blur"></div>
+
+    <div class="container">
+        <header>
+            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">Sun Tempest</h1>
+
+            <nav class="navbar">
+                <a data-aos="fade-down" data-aos-duration="1500"  href="#">Home</a>
+                <a data-aos="fade-down" data-aos-duration="2000"  href="#">Projects</a>
+                <a data-aos="fade-down" data-aos-duration="2500"  href="#">Contacts</a>
+                <a data-aos="fade-down" data-aos-duration="3000"  href="#">Company</a>
+            </nav>
+
+            <button data-aos="fade-down" data-aos-duration="1500"  class="btn-signing">Sign in</button>
+
+            <!--Hambugher Menu-->
+            <div class="hambugher" id="ham">
+                <div class="bar bar_one"></div>
+                <div class="bar bar_two"></div>
+                <div class="bar bar_three"></div>
+            </div>
+        </header>
+
+        <main>
+            <div 
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                data-aos="fade-down" data-aos-duration="1500"
+                class="content"
+            >
+                <div class="tag-box">
+                    <div class="tag">INTRODUCING &wedbar;</div>
+                </div>
+    
+                <h1
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0"
+                    data-aos="fade-down" data-aos-duration="2000"
+                >A 3D LANDING PAGE</h1>
+                <p 
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0"
+                    data-aos="fade-down" data-aos-duration="2500"
+                    class="description"
+                >
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, omnis animi! Nihil cumque rem error vel ipsum quo minus officiis?
+                </p>
+    
+                <div 
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0"
+                    data-aos="fade-down" data-aos-duration="3000"
+                    class="buttons"
+                >
+                    <a href="#" class="btn-get-started">About this Message &gt;</a>
+                    <a href="#" class="btn-signin-main">Get Started &gt;</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- The 3d Robot -->
+        <spline-viewer 
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos="fade-down" data-aos-duration="3000"
+            class="robot-3d" loading-anim-type="none" 
+            url="https://prod.spline.design/a1Qxc5U7B6wQ2ZjH/scene.splinecode"
+        >
+        </spline-viewer>
+
+        
+    </div>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- CUSTOM SCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
